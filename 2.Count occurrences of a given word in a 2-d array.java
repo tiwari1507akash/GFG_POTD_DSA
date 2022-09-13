@@ -54,7 +54,3 @@ S N
 S N
   A K E
 1 TIMES OCCUR
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms

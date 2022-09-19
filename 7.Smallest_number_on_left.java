@@ -1,3 +1,4 @@
+// FIND NEXT SMALLER ELEMENT or NSE
 class Solution{
     static List<Integer> leftSmaller(int n, int a[])
     {

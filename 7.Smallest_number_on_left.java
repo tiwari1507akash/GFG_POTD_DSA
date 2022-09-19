@@ -28,3 +28,32 @@ Explaination: Upto 3 it is easy to see
 the smaller numbers. But for 4 the smaller 
 numbers are 1, 0 and 3. But among them 3 
 is closest. Similary for 5 it is 4.
+
+    //BY USING STACK
+    
+class Solution{
+    static List<Integer> leftSmaller(int n, int a[])
+    {
+        Stack<Integer> st = new Stack<>();
+        List<Integer> ans = new ArrayList<>();
+        for(int x : a)
+        {
+            while(!st.isEmpty() && st.peek()>=x) st.pop();
+            
+            if(st.isEmpty())
+            {
+                ans.add(-1);
+            }
+            else
+            {
+                ans.add(st.peek());
+            }
+            
+            st.push(x);
+            
+        }
+        
+        return ans;
+
+    }
+}

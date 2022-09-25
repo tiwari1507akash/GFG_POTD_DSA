@@ -7,11 +7,11 @@ Assume that both the players play optimally.
 class Solution {
     public static int swapBitGame(long N) {
         int cnt=0;
-        while(N>0){
-            if((N&1)==1){
+        while(n>0){
+            if((n&1)==1){
                 cnt++;
             }
-            N>>=1;
+            n>>=1;
         }
         return cnt%2==0?2:1;
     }
